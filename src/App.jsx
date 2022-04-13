@@ -1,8 +1,10 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+
 function App() {
     return(
-        <>
-        <h1>Testing</h1>
-        </>
+        <Router>
+
+        </Router>
 
     )
 }
