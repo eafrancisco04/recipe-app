@@ -32,7 +32,7 @@ function Popular() {
 
     return(
         <div>
-            <div>
+            <Wrapper>
                 <h3>Popular Recipes</h3>
 
                 <Splide
@@ -46,16 +46,53 @@ function Popular() {
                 >
                     {popular.map((recipe) => {
                         <SplideSlide>
-                            <div>
+                            <Card>
                                 <p>{recipe.title}</p>
                                 <img src={recipe.image} alt={recipe.title} />
-                            </div>
+                            </Card>
                         </SplideSlide>
                     })}
                 </Splide>
-            </div>
+            </Wrapper>
         </div>
     );
 }
+
+const Wrapper = styled.div`
+    margin: 4rem 0;
+`;
+
+const Card = styled.div`
+    min-height: 25rem;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+
+    p {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0);
+        color: #eee;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            border-radius: 1rem;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+`;
 
 export default Popular;
