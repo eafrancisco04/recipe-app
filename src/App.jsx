@@ -1,10 +1,15 @@
+import Pages from './pages/Pages';
+import Category from './components/Category';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
     return(
-        <>
-        <h1>Hello</h1>
-        </>
+        <div className="App">
+            <Router>
+                <Category />
+                <Pages />
+            </Router>
+        </div>
 
     )
 }
