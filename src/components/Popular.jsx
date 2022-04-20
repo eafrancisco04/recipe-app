@@ -9,7 +9,6 @@ function Popular() {
     //Run function when component is loaded
     useEffect(() => {
         getPopular();
-
     }, []);
 
     const getPopular = async () => {
