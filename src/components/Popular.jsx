@@ -45,13 +45,15 @@ function Popular() {
                     }}
                 >
                     {popular.map((recipe) => {
-                        <SplideSlide>
+                        return(
+                            <SplideSlide>
                             <Card>
                                 <p>{recipe.title}</p>
                                 <img src={recipe.image} alt={recipe.title} />
                                 <Gradient />
                             </Card>
                         </SplideSlide>
+                        );
                     })}
                 </Splide>
             </Wrapper>
@@ -96,7 +98,7 @@ const Card = styled.div`
     }
 `;
 
-const Gradient = styled-div`
+const Gradient = styled.div`
 z-index: 3;
 position: absolute;
 width: 100%;

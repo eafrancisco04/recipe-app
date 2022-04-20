@@ -5,7 +5,7 @@ import { FaPizzaSlice, FaHamburger } from 'react-icons/fa';
 
 function Category() {
     return(
-        <div>
+        <List>
             <NavLink to="/cuisine/italian">
                 <FaPizzaSlice />
                 <h4>Italian</h4>
@@ -15,8 +15,14 @@ function Category() {
                 <FaHamburger />
                 <h4>hamburgers</h4>
             </NavLink>
-        </div>
+        </List>
     )
 }
+
+const List =  styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+`
 
 export default Category;
