@@ -4,7 +4,6 @@ function Home() {
     return(
         <div>
             <Popular />
-            <Veggie />
         </div>
 
     )
