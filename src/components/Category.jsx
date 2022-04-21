@@ -1,20 +1,20 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaPizzaSlice } from 'react-icons/fa';
-import { GiCupcake, GiNoodles, GiBokChoy, GiTacos, GiButterToast, GiKnifeFork } from 'react-icons/gi';
+import { GiChickenOven, GiNoodles, GiBokChoy, GiTacos, GiSushis, GiHamburger } from 'react-icons/gi';
 
 
 function Category() {
     return(
         <List>
-            <NLink to="/cuisine/dessert">
-                <GiCupcake size={30}/>
-                <h4>Dessert</h4>
+            <NLink to="/cuisine/american">
+                <GiHamburger size={30}/>
+                <h4>American</h4>
             </NLink>
 
-            <NLink to="/cuisine/asian">
+            <NLink to="/cuisine/chinese">
                 <GiNoodles size={30}/>
-                <h4>East Asian</h4>
+                <h4>Chinese</h4>
             </NLink>
 
             <NLink to="/cuisine/mexican">
@@ -27,14 +27,14 @@ function Category() {
                 <h4>Italian</h4>
             </NLink>
 
-            <NLink to="/cuisine/vegetarian">
-                <GiBokChoy size={30}/>
-                <h4>Vegetarian</h4>
+            <NLink to="/cuisine/sushi">
+                <GiSushis size={30}/>
+                <h4>Japanese</h4>
             </NLink>
 
-            <NLink to="/cuisine/breakfast">
-                <GiButterToast size={30}/>
-                <h4>Breakfast</h4>
+            <NLink to="/cuisine/european">
+                <GiChickenOven size={30}/>
+                <h4>European</h4>
             </NLink>
         </List>
     )

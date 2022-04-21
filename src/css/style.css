@@ -17,7 +17,8 @@ h1 {
     justify-content: center;
     align-items: center;
     background-image: url("../img/bg-food.jpg");
-    height: 50vh;
+    height: 60vh;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,4 +28,5 @@ h1 {
 
 .two {
     background-position: bottom;
+    height: 50vh;
 }
