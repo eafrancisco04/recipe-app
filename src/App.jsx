@@ -11,7 +11,7 @@ function App() {
             <Router>
                 <Nav>
                     <Logo to="/">
-                        <SiCodechef size={70}/> Code Cooker
+                        <SiCodechef size={100}/> Code Chef
                     </Logo>
                 </Nav>
 
@@ -26,10 +26,13 @@ function App() {
 }
 
 const Logo = styled(Link)`
+    argin: auto;
+    padding: 0;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
+    color: #3C3431;
 `
 
 const Nav = styled.div`

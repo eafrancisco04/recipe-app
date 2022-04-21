@@ -43,7 +43,7 @@ function Category() {
 const List =  styled.div`
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 0;
     background-image: url("../img/bg-food.jpg");
 `
 const NLink = styled(NavLink)`
