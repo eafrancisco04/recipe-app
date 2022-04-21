@@ -33,6 +33,7 @@ function Popular() {
         <div>
             <Wrapper>
                 <h2>Fan Favorites</h2>
+                <p>Recipes that will surely wow the crowd.</p>
 
                 <Splide
                     options={{
@@ -49,7 +50,6 @@ function Popular() {
                             <Card>
                                 <p>{recipe.title}</p>
                                 <img src={recipe.image} alt={recipe.title} />
-                                <Gradient />
                             </Card>
                         </SplideSlide>
                         );
@@ -62,11 +62,17 @@ function Popular() {
 
 const Wrapper = styled.div`
     margin: 4rem 0;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 `;
 
 const Card = styled.div`
-  min-height: 25rem;
-  
+  height: 25rem;
+  width: 5rem;
 
   p {
     position: absolute;
@@ -96,12 +102,5 @@ const Card = styled.div`
   }
 `;
 
-const Gradient = styled.div`
-z-index: 3;
-position: absolute;
-width: 100%;
-heightL 100%;
-background-image: linear-gradient(rdgba(0, 0, 0, 0), rgba(0, 0, 0, 0, 0.5));
-`
 
 export default Popular;
