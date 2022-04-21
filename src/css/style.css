@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+body {
+    background-color: #F4EBD0;
+}
+
+h1 {
+    font-family: 'Beau Rivage', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.cover {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/bg-food.jpg");
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 3em;
+
+}

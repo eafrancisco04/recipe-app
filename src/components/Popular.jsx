@@ -32,7 +32,7 @@ function Popular() {
     return(
         <div>
             <Wrapper>
-                <h3>Popular Recipes</h3>
+                <h2>Fan Favorites</h2>
 
                 <Splide
                     options={{
@@ -65,36 +65,35 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-    min-height: 25rem;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
+  min-height: 25rem;
+  
 
-    p {
-        position: absolute;
-        z-index: 10;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 0);
-        color: #eee;
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
-        height: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  p {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
 
-        img {
-            border-radius: 1rem;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-    }
+  img {
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid 2px #B68D40;
+  }
 `;
 
 const Gradient = styled.div`

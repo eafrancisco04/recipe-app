@@ -7,35 +7,35 @@ import { GiCupcake, GiNoodles, GiBokChoy, GiTacos, GiButterToast, GiKnifeFork } 
 function Category() {
     return(
         <List>
-            <NavLink to="/cuisine/dessert">
-                <GiCupcake />
+            <NLink to="/cuisine/dessert">
+                <GiCupcake size={30}/>
                 <h4>Dessert</h4>
-            </NavLink>
+            </NLink>
 
-            <NavLink to="/cuisine/asian">
-                <GiNoodles />
+            <NLink to="/cuisine/asian">
+                <GiNoodles size={30}/>
                 <h4>East Asian</h4>
-            </NavLink>
+            </NLink>
 
-            <NavLink to="/cuisine/mexican">
-                <GiTacos />
+            <NLink to="/cuisine/mexican">
+                <GiTacos size={30}/>
                 <h4>Mexican</h4>
-            </NavLink>
+            </NLink>
 
-            <NavLink to="/cuisine/italian">
-                <FaPizzaSlice />
+            <NLink to="/cuisine/italian">
+                <FaPizzaSlice size={30}/>
                 <h4>Italian</h4>
-            </NavLink>
+            </NLink>
 
-            <NavLink to="/cuisine/vegetarian">
-                <GiBokChoy />
+            <NLink to="/cuisine/vegetarian">
+                <GiBokChoy size={30}/>
                 <h4>Vegetarian</h4>
-            </NavLink>
+            </NLink>
 
-            <NavLink to="/cuisine/breakfast">
-                <GiButterToast />
+            <NLink to="/cuisine/breakfast">
+                <GiButterToast size={30}/>
                 <h4>Breakfast</h4>
-            </NavLink>
+            </NLink>
         </List>
     )
 }
@@ -44,6 +44,14 @@ const List =  styled.div`
     display: flex;
     justify-content: center;
     margin: 2rem 0;
+    background-image: url("../img/bg-food.jpg");
 `
+const NLink = styled(NavLink)`
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem;
 
+`
 export default Category;
