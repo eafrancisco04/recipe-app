@@ -1,4 +1,5 @@
 import Pages from './pages/Pages';
+import Footer from './components/Footer';
 import Category from './components/Category';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -16,6 +17,8 @@ function App() {
 
                 <Category />
                 <Pages />
+
+                <Footer />
             </Router>
         </div>
 

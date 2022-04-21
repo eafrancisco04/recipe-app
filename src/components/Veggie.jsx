@@ -32,7 +32,9 @@ function Veggie() {
     return(
         <div>
             <Wrapper>
-                <h3>Vegetarian Recipes</h3>
+                <h2>Vegetarian</h2>
+                <p>No meat? No problem.</p>
+
 
                 <Splide
                     options={{
@@ -49,7 +51,6 @@ function Veggie() {
                             <Card>
                                 <p>{recipe.title}</p>
                                 <img src={recipe.image} alt={recipe.title} />
-                                <Gradient />
                             </Card>
                         </SplideSlide>
                         );
@@ -62,47 +63,44 @@ function Veggie() {
 
 const Wrapper = styled.div`
     margin: 4rem 0;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 `;
 
 const Card = styled.div`
-    min-height: 25rem;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
+  height: 25rem;
+  width: 5rem;
 
-    p {
-        position: absolute;
-        z-index: 10;
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 0);
-        color: #eee;
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
-        height: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  p {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
 
-        img {
-            border-radius: 1rem;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-    }
+  img {
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid 2px #B68D40;
+  }
 `;
-
-const Gradient = styled.div`
-z-index: 3;
-position: absolute;
-width: 100%;
-heightL 100%;
-background-image: linear-gradient(rdgba(0, 0, 0, 0), rgba(0, 0, 0, 0, 0.5));
-`
 
 export default Veggie;

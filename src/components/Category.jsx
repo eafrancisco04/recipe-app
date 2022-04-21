@@ -52,6 +52,11 @@ const NLink = styled(NavLink)`
     align-items: center;
     justify-content: space-around;
     padding: 0 2rem;
+    color: #3C3431;
+
+    :hover {
+        color: #705446;
+    }
 
 `
 export default Category;
