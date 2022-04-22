@@ -26,7 +26,7 @@ function App() {
 }
 
 const Logo = styled(Link)`
-    argin: auto;
+    margin: auto;
     padding: 0;
     text-decoration: none;
     font-size: 2rem;

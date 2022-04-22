@@ -43,6 +43,7 @@ function Popular() {
                         pagination: false,
                         drag: "free",
                         gap: "5rem",
+                        
                     }}
                 >
                     {popular.map((recipe) => {
@@ -64,18 +65,19 @@ function Popular() {
 }
 
 const Wrapper = styled.div`
-    margin: 4rem 0;
-    padding: 0 3rem;
+    margin: auto;
+    padding: 0 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    max-width: 70vw;
+    
 `;
 
 const Card = styled.div`
   height: 25rem;
-  width: 150px;
+  width: 80px;
 
   p {
     position: absolute;
@@ -83,11 +85,13 @@ const Card = styled.div`
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 0);
-    color: #D0B49F;
+    color: #000;
     width: 100%;
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
     height: 40%;
+
     display: flex;
     align-items: center;
     justify-content: center;

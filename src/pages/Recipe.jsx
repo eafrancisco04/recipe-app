@@ -75,7 +75,7 @@ const DetailWrapper = styled.div`
 
     .active {
         background-image: linear-gradient(35deg, #494949, #333);
-        color: #fff;
+        color: #F4EBE8;
     }
 
     h2 {
@@ -95,8 +95,8 @@ const DetailWrapper = styled.div`
 const Button = styled.button`
     padding: 1rem;
     color: #333;
-    background-color: white;
-    border: 2px solid #000;
+    background-color: transparent;
+    border: 3px solid #000;
     margin-right: 2 rem;
     font-weight: bold;
 `
