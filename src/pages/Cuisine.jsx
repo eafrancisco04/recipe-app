@@ -37,18 +37,26 @@ function Cuisine() {
 }
 
 const Grid = styled.div`
+    margin: auto;
     display: grid;
+    padding: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 3rem;
+    
 `
 const Card = styled.div`
     img {
         border-radius: 2rem;
         width: 100%;
+        object-fit: cover;
     }
 
     a{
         text-decoration: none;
+        color: #3C3431;
+
+    :hover {
+        color: #705446;
     }
 
     h2 {

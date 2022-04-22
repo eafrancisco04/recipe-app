@@ -45,6 +45,8 @@ const List =  styled.div`
     justify-content: center;
     margin: 0;
     background-image: url("../img/bg-food.jpg");
+    border-top: solid 3px #3C3431;
+    border-bottom: solid 3px #3C3431;
 `
 const NLink = styled(NavLink)`
     text-decoration: none;
