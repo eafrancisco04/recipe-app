@@ -68,7 +68,6 @@ const DetailWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
-    
 
     div {
         width: 80%;

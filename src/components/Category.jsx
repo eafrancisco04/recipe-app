@@ -12,9 +12,9 @@ function Category() {
                 <h4>American</h4>
             </NLink>
 
-            <NLink to="/cuisine/chinese">
+            <NLink to="/cuisine/vietnamese">
                 <GiNoodles size={30}/>
-                <h4>Chinese</h4>
+                <h4>Vietnamese</h4>
             </NLink>
 
             <NLink to="/cuisine/mexican">
@@ -27,7 +27,7 @@ function Category() {
                 <h4>Italian</h4>
             </NLink>
 
-            <NLink to="/cuisine/sushi">
+            <NLink to="/cuisine/japanese">
                 <GiSushis size={30}/>
                 <h4>Japanese</h4>
             </NLink>
