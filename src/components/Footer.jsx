@@ -1,4 +1,4 @@
-import { BsInstagram, BsYoutube, BsTwitter } from 'react-icons/bs';
+import { BsInstagram, BsYoutube } from 'react-icons/bs';
 import { FaPinterestP, FaFacebookF } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import styled from 'styled-components';

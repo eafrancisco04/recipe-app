@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaPizzaSlice } from 'react-icons/fa';
-import { GiChickenOven, GiNoodles, GiBokChoy, GiTacos, GiSushis, GiHamburger } from 'react-icons/gi';
+import { GiChickenOven, GiNoodles, GiTacos, GiSushis, GiHamburger } from 'react-icons/gi';
 
 
 function Category() {
