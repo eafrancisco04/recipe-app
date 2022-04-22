@@ -43,8 +43,18 @@ function Recipe() {
                 
                 {activeTab === "instructions" && (
                     <div>
-                        <h3 dangerouslySetInnerHTML={{}}></h3>
+                        <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
+                        <h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
                     </div>
+                )}
+
+                {activeTab === "ingredients" && (
+                    <ul>
+                        {details.extendedIngredients.map((ingredient) => {
+                            <li key={ingredient.id}>{ingredient.original}</li>;
+
+                        })}
+                    </ul>
                 )}
 
             </Info>
@@ -52,7 +62,7 @@ function Recipe() {
     )
 }
 
-const DetailWrapper = style.dic`
+const DetailWrapper = styled.div`
     margin: 10rem 0 5rem;
     dispaly: flex;
 
@@ -68,15 +78,20 @@ const DetailWrapper = style.dic`
     ul {
         margin-top: 2rem;
     }
+
+    li {
+        font-size: 1.25rem;
+        line-height: 2;
+    }
 `
 
-const Button = styled.div`
+const Button = styled.button`
     padding: 1rem;
     color: #333;
     background-color: white;
     border: 2px solid #000;
     margin-right: 2 rem;
-    font-weight: cold;
+    font-weight: bold;
 `
 const Info = styled.div`
     margin: 1rem;
