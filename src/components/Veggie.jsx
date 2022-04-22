@@ -76,7 +76,7 @@ const Wrapper = styled.div`
 
 const Card = styled.div`
   height: 25rem;
-  width: 5rem;
+  width: 100px;
 
   p {
     position: absolute;
@@ -84,7 +84,7 @@ const Card = styled.div`
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 0);
-    color: #fff;
+    color: #D0B49F;
     width: 100%;
     text-align: center;
     font-weight: bold;
@@ -102,7 +102,9 @@ const Card = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: solid 2px #B68D40;
+    height: 90%;
+    box-shadow: 5px 5px #7E5727;
+    
   }
 `;
 
