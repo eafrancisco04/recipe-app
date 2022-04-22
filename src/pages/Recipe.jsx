@@ -4,21 +4,20 @@ import { useParams } from 'react-router-dom';
 
 function Recipe() {
     let params = useParams();
-    const [details, setDetails] = useSTate({});
+    const [details, setDetails] = useState({});
     const [activeTab, setActiveTab] = useState("instructions");
 
     const fetchDetails = async () => {
-        const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}
-        /information?apiKey=${process.env.REACT_APP_API_KEY}`)
-    };
+        const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
 
-    const detailData =  await data.json();
-    setDetails(detailData);
-    console.log(detailData);
+        const detailData =  await data.json();
+        setDetails(detailData);
+        console.log(detailData);
+    };
 
     useEffect(() => {
         fetchDetails();
-    }, [params,name]);
+    }, [params.name]);
 
     return(
         <DetailWrapper>
@@ -43,17 +42,17 @@ function Recipe() {
                 
                 {activeTab === "instructions" && (
                     <div>
-                        <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
-                        <h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
+                        <p dangerouslySetInnerHTML={{ __html: details.summary }}></p>
+                        <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p>
                     </div>
                 )}
 
                 {activeTab === "ingredients" && (
                     <ul>
-                        {details.extendedIngredients.map((ingredient) => {
-                            <li key={ingredient.id}>{ingredient.original}</li>;
+                        {details.extendedIngredients.map((ingredient) => (
+                            <li key={ingredient.id}>{ingredient.original}</li>
 
-                        })}
+                        ))}
                     </ul>
                 )}
 
@@ -64,7 +63,9 @@ function Recipe() {
 
 const DetailWrapper = styled.div`
     margin: 10rem 0 5rem;
-    dispaly: flex;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
 
     .active {
         background-image: linear-gradient(35deg, #494949, #333);
@@ -95,6 +96,7 @@ const Button = styled.button`
 `
 const Info = styled.div`
     margin: 1rem;
+    padding: 2rem;
 `
 
 export default Recipe;
